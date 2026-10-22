@@ -1,0 +1,40 @@
+#include<stdio.h>
+
+#include<stdlib.h>
+
+#include<stdbool.h>
+
+bool cheakEven(int iNo)                                                               
+{
+  if((iNo % 2) == 0)
+    {
+      return true;
+    }
+    else
+    {
+     return false;
+    }
+
+}
+
+int main()                                         
+{
+    int ivalue = 0;
+    bool bRet  = false;
+
+    printf("Enter number : \n");
+    scanf("%d",&ivalue);
+
+    bRet = cheakEven(ivalue);
+
+   if(bRet == true)
+   {
+
+    printf("it is even\n");
+   }
+   else
+   {
+    printf("it is odd\n");
+   }
+    return EXIT_SUCCESS;
+}
